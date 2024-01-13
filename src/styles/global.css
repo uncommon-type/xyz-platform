@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto w-full max-w-[1400px];
+  }
+
+  .gap-x-grid {
+    @apply gap-x-10;
+  }
+}
+
+@layer utilities {
+  .remove-autocomplete-styles:-webkit-autofill,
+  .remove-autocomplete-styles:-webkit-autofill:hover,
+  .remove-autocomplete-styles:-webkit-autofill:focus {
+    transition: background-color 5000s;
+  }
+
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
