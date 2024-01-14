@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import Header from 'components/shared/header';
 
-import 'styles/global.css';
+import 'styles/main.css';
 
 import {
   roboto,

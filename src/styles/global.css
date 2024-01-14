@@ -1,36 +1,61 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'custom-props.css';
+@import 'reset.css';
 
 @layer base {
   body {
-    @apply antialiased;
-  }
-}
-
-@layer components {
-  .container {
-    @apply mx-auto w-full max-w-[1400px];
+    @apply bg-black text-grey-98 font-roboto text-base;
   }
 
-  .gap-x-grid {
-    @apply gap-x-10;
-  }
-}
-
-@layer utilities {
-  .remove-autocomplete-styles:-webkit-autofill,
-  .remove-autocomplete-styles:-webkit-autofill:hover,
-  .remove-autocomplete-styles:-webkit-autofill:focus {
-    transition: background-color 5000s;
+  #root,
+  #__next {
+    isolation: isolate;
   }
 
-  .scrollbar-hidden {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  h1 {
+    @apply text-2xl;
+  }
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  h2 {
+    @apply text-3xl;
+  }
+
+  h1,
+  h2 {
+    @apply max-w-[30ch];
+  }
+
+  p {
+    @apply max-w-[50ch];
+  }
+
+  a {
+    @apply text-current no-underline cursor-pointer;
+  }
+
+  svg {
+    @apply w-[0.75em] h-[0.75em] text-current stroke-current;
+  }
+
+  [role='list'] {
+    @apply mb-0 p-0;
+  }
+
+  :focus {
+    outline: 5px solid rgb(var(--primary-1) / 1);
+    outline-offset: 10px;
+  }
+
+  input,
+  input::placeholder {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  section + section {
+    @apply mt-[var(--space-md)];
+  }
+
+  li a {
+    @apply w-full inline-block;
   }
 }

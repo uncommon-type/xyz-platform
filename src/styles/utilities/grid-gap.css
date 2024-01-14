@@ -1,0 +1,7 @@
+.grid-gap-sm {
+  @apply gap-10;
+}
+
+.grid-gap-lg {
+  @apply gap-space-2xl;
+}

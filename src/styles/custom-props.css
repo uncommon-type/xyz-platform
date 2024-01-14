@@ -1,0 +1,42 @@
+:root {
+  --white: theme(colors.white);
+  --black: theme(colors.black);
+  --primary-1: theme(colors.primary.1);
+  --primary-2: theme(colors.primary.2);
+  --primary-3: theme(colors.primary.3);
+  --primary-4: theme(colors.primary.4);
+  --primary-5: theme(colors.primary.5);
+  --primary-6: theme(colors.primary.6);
+  --primary-7: theme(colors.primary.7);
+  --secondary-1: theme(colors.secondary.1);
+  --secondary-2: theme(colors.secondary.2);
+  --secondary-3: theme(colors.secondary.3);
+  --grey-90: theme(colors.grey.90);
+  --grey-94: theme(colors.grey.94);
+  --grey-98: theme(colors.grey.98);
+
+  --space-4xs: theme(spacing.space-4xs);
+  --space-3xs: theme(spacing.space-3xs);
+  --space-2xs: theme(spacing.space-2xs);
+  --space-xs: theme(spacing.space-xs);
+  --space-s: theme(spacing.space-s);
+  --space-md: theme(spacing.space-md);
+  --space-lg: theme(spacing.space-lg);
+  --space-xl: theme(spacing.space-xl);
+  --space-2xl: theme(spacing.space-2xl);
+  --space-mega: theme(spacing.space-mega);
+
+  --font-roboto: theme(fontFamily.roboto);
+  --font-roboto-light: theme(fontFamily.roboto-light);
+  --font-roboto-medium: theme(fontFamily.roboto-medium);
+  --font-roboto-semibold: theme(fontFamily.roboto-semibold);
+  --font-poppins: theme(fontFamily.poppins);
+  --font-poppins-light: theme(fontFamily.poppins-light);
+  --font-poppins-medium: theme(fontFamily.poppins-medium);
+
+  --min-width: min(16rem, calc(100% - var(--space-lg) * 2));
+  --grid-50-min-item-size: clamp(var(--min-width), 50vw, 32.25rem);
+  --grid-thirds-min-item-size: clamp(var(--min-width), 33%, 20rem);
+
+  --border-radius-sm: 2.5rem;
+}
