@@ -7,8 +7,13 @@ export default {
   },
   theme: {
     fontFamily: {
-      sans: ['', ...defaultTheme.fontFamily.sans],
-      mono: ['', ...defaultTheme.fontFamily.mono],
+      roboto: ['var(--font-roboto)', ...defaultTheme.fontFamily.sans],
+      'roboto-light': ['var(--font-roboto-light)', ...defaultTheme.fontFamily.sans],
+      'roboto-medium': ['var(--font-roboto-medium)', ...defaultTheme.fontFamily.sans],
+      'roboto-semibold': ['var(--font-roboto-semibold)', ...defaultTheme.fontFamily.sans],
+      poppins: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
+      'poppins-light': ['var(--font-poppins-light)', ...defaultTheme.fontFamily.sans],
+      'poppins-medium': ['var(--font-poppins-medium)', ...defaultTheme.fontFamily.sans],
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
