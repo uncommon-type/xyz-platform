@@ -3,37 +3,39 @@ import PropTypes from 'prop-types';
 
 import Link from 'components/shared/link';
 
-const styles = {
-  base: '',
-  size: {},
-  theme: {},
-};
+import styles from '../styles/button-styles';
 
-const Button = ({ className, to, size, theme, children, ...otherProps }) => {
-  const Tag = to ? Link : 'button';
+import ButtonInner from './button-inner';
+
+const Button = ({
+  href,
+  className = '',
+  size = '',
+  theme = '',
+  label = '',
+  icon = '',
+  ...otherProps
+}) => {
+  const Tag = href ? Link : 'button';
 
   return (
     <Tag
+      href={href}
       className={clsx(styles.base, styles.size[size], styles.theme[theme], className)}
-      to={to}
       {...otherProps}
     >
-      {children}
+      <ButtonInner icon={icon} className={className} label={label} />
     </Tag>
   );
 };
 
 Button.propTypes = {
+  href: PropTypes.string,
   className: PropTypes.string,
-  to: PropTypes.string,
-  size: PropTypes.oneOf(Object.keys(styles.size)).isRequired,
-  theme: PropTypes.oneOf(Object.keys(styles.theme)).isRequired,
-  children: PropTypes.node.isRequired,
-};
-
-Button.defaultProps = {
-  className: null,
-  to: null,
+  size: PropTypes.oneOf(Object.keys(styles.size)),
+  theme: PropTypes.oneOf(Object.keys(styles.theme)),
+  label: PropTypes.string,
+  icon: PropTypes.string,
 };
 
 export default Button;
