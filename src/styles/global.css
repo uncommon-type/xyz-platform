@@ -3,7 +3,7 @@
 
 @layer base {
   body {
-    @apply bg-black text-grey-98 font-roboto text-base;
+    @apply bg-black text-grey-98 font-roboto font-normal text-base;
   }
 
   #root,
