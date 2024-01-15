@@ -3,39 +3,35 @@ import clsx from 'clsx';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 
-const styles = {
-  transition: 'transition-colors duration-200',
-  base: '',
-  size: {},
-  theme: {},
-};
+import styles from '../styles/button-styles';
 
 const Link = ({
-  className: additionalClassName = null,
-  href = null,
-  size = null,
-  theme = null,
+  className = '',
+  href = '',
+  size = '',
+  theme = '',
+  ariaLabel = '',
   children,
   ...props
 }) => {
-  const linkClassName = clsx(
+  const baseClasses = clsx(
     styles.transition,
     size && theme && styles.base,
     size && styles.size[size],
     theme && styles.theme[theme],
-    additionalClassName
+    className
   );
 
-  if (href.toString().startsWith('/')) {
+  if (href?.toString().startsWith('/')) {
     return (
-      <NextLink className={linkClassName} href={href} {...props}>
+      <NextLink className={baseClasses} href={href} {...props}>
         {children}
       </NextLink>
     );
   }
 
   return (
-    <a className={linkClassName} href={href.toString()} {...props}>
+    <a className={baseClasses} href={href?.toString()} aria-label={ariaLabel} {...props}>
       {children}
     </a>
   );
@@ -46,6 +42,7 @@ Link.propTypes = {
   href: PropTypes.string,
   size: PropTypes.oneOf(Object.keys(styles.size)),
   theme: PropTypes.oneOf(Object.keys(styles.theme)),
+  ariaLabel: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
