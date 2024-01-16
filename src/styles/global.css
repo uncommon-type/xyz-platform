@@ -58,4 +58,16 @@
   li a {
     @apply w-full inline-block;
   }
+
+  .card-list li {
+    --flow-space: min(2rem, 4vh);
+  }
+
+  .card__stats {
+    --flow-space: var(--space-3xs);
+  }
+
+  .card__details {
+    --flow-space: 2rem;
+  }
 }

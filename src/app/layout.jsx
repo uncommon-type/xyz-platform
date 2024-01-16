@@ -23,7 +23,7 @@ const RootLayout = ({ children }) => (
     <body>
       <div className="container">
         <Header />
-        <main>{children}</main>
+        <main className="last:pb-space-xl">{children}</main>
       </div>
     </body>
   </html>

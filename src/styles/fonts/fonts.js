@@ -65,7 +65,7 @@ const poppins = localFont({
   src: './poppins/poppins-regular.woff2',
   weight: '400',
   style: 'normal',
-  fallback: 'Arial',
+  fallback: ['Arial'],
   variable: '--font-poppins',
   declarations: [
     { prop: 'ascent-override', value: '92.83%' },

@@ -1,3 +1,4 @@
+import FeatureGroup from 'components/pages/featuregroup/feature-group';
 import Hero from 'components/pages/hero';
 import getMetadata from 'utils/get-metadata';
 
@@ -7,7 +8,12 @@ const data = {
   pathname: '/',
 };
 
-const Home = () => <Hero />;
+const Home = () => (
+  <>
+    <Hero />
+    <FeatureGroup />
+  </>
+);
 
 export default Home;
 
