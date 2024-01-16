@@ -1,3 +1,4 @@
+import Hero from 'components/pages/hero';
 import getMetadata from 'utils/get-metadata';
 
 const data = {
@@ -6,7 +7,7 @@ const data = {
   pathname: '/',
 };
 
-const Home = () => <div>home</div>;
+const Home = () => <Hero />;
 
 export default Home;
 
