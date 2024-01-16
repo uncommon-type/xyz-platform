@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import Button from 'components/shared/button/button';
+import { robotoSemibold } from 'styles/fonts/fonts';
 
 const SignupButton = ({ status = 'default' }) => {
   const states = {
@@ -29,7 +30,7 @@ const SignupButton = ({ status = 'default' }) => {
     default: {
       size: 'md',
       theme: 'purple',
-      className: 'font-roboto-semibold font-semibold',
+      className: `${robotoSemibold.className}`,
       label: 'Free trial',
       ariaLabel: 'Submit email for free trial',
       icon: null,

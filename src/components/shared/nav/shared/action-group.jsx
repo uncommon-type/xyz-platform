@@ -2,6 +2,8 @@
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 
+import { robotoSemibold } from 'styles/fonts/fonts';
+
 import NavItem from './nav-items/nav-item';
 
 const actionGroup = [
@@ -15,7 +17,7 @@ const actionGroup = [
     label: 'Book a demo',
     size: 'sm',
     theme: 'dark-white',
-    className: 'font-roboto-semibold font-semibold',
+    className: `${robotoSemibold.className}`,
   },
 ];
 

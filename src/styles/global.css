@@ -3,7 +3,7 @@
 
 @layer base {
   body {
-    @apply bg-black text-grey-98 font-roboto font-normal text-base;
+    @apply bg-black text-grey-98 text-base;
   }
 
   #root,
@@ -65,6 +65,10 @@
 
   .card__stats {
     --flow-space: var(--space-3xs);
+  }
+
+  .card__stats > p {
+    @apply font-normal;
   }
 
   .card__details {

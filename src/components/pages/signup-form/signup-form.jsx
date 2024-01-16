@@ -7,6 +7,7 @@ import { getUserInput, validate } from 'components/pages/signup-form/helpers/for
 import Error from 'components/shared/error/error';
 import Input from 'components/shared/input/input';
 import Label from 'components/shared/label/label';
+import { robotoLight } from 'styles/fonts/fonts';
 
 import sendDataWithDelay from './network';
 import SignupButton from './signup-button';
@@ -65,7 +66,7 @@ const SignupForm = () => {
           <Label id="email" className="sr-only" value="Email" />
           <Input
             className={clsx(
-              'm-0 py-4 px-7 border-none rounded-sm text-grey-90 text-base font-roboto-light font-light leading-4.5 tracking-medium',
+              `m-0 py-4 px-7 border-none rounded-sm text-grey-90 text-base ${robotoLight.className} leading-4.5 tracking-medium`,
               error
                 ? 'placeholder:bg-grey-90 opacity-80'
                 : 'placeholder:bg-light-gradient bg-clip-text opacity-100'

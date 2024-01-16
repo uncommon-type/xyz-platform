@@ -1,5 +1,3 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
-
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   corePlugins: {
@@ -46,15 +44,6 @@ export default {
       xl: 'clamp(1.185rem, 1.131rem + 0.31vw, 1.50rem)',
       '2xl': 'clamp(1.86rem, 1.367rem + 2.82vw, 4.75rem)',
       '3xl': 'clamp(3.33rem, 2.447rem + 5.04vw, 8.5rem)',
-    },
-    fontFamily: {
-      poppins: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
-      'poppins-light': ['var(--font-poppins-light)', ...defaultTheme.fontFamily.sans],
-      'poppins-medium': ['var(--font-poppins-medium)', ...defaultTheme.fontFamily.sans],
-      roboto: ['var(--font-roboto)', ...defaultTheme.fontFamily.sans],
-      'roboto-light': ['var(--font-roboto-light)', ...defaultTheme.fontFamily.sans],
-      'roboto-medium': ['var(--font-roboto-medium)', ...defaultTheme.fontFamily.sans],
-      'roboto-semibold': ['var(--font-roboto-semibold)', ...defaultTheme.fontFamily.sans],
     },
     letterSpacing: {
       tightest: '-0.34rem',

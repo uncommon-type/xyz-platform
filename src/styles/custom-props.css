@@ -26,14 +26,6 @@
   --space-2xl: theme(spacing.space-2xl);
   --space-mega: theme(spacing.space-mega);
 
-  --font-roboto: theme(fontFamily.roboto);
-  --font-roboto-light: theme(fontFamily.roboto-light);
-  --font-roboto-medium: theme(fontFamily.roboto-medium);
-  --font-roboto-semibold: theme(fontFamily.roboto-semibold);
-  --font-poppins: theme(fontFamily.poppins);
-  --font-poppins-light: theme(fontFamily.poppins-light);
-  --font-poppins-medium: theme(fontFamily.poppins-medium);
-
   --min-width: min(16rem, calc(100% - var(--space-lg) * 2));
   --grid-50-min-item-size: clamp(var(--min-width), 50vw, 32.25rem);
   --grid-thirds-min-item-size: clamp(var(--min-width), 33%, 20rem);
