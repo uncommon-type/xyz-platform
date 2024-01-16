@@ -24,7 +24,7 @@ const getMetadata = ({
     },
     metadataBase: new URL(SITE_URL),
     icons: {
-      icon: '/images/favicon/favicon-32x32.png',
+      shortcut: ['/images/favicon/icon.ico'],
       apple: [
         {
           url: '/images/favicon/favicon-48x48.png',
@@ -69,7 +69,6 @@ const getMetadata = ({
         },
       ],
     },
-
     openGraph: {
       type,
       title,
