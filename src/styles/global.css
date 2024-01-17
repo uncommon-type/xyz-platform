@@ -36,19 +36,33 @@
     @apply w-[0.75em] h-[0.75em] text-current stroke-current;
   }
 
+  :focus {
+    outline: 5px solid rgb(var(--primary-1) / 1);
+    outline-offset: 10px;
+  }
+
   [role='list'] {
     @apply mb-0 p-0;
   }
 
-  :focus {
-    outline: 5px solid rgb(var(--primary-1) / 1);
-    outline-offset: 10px;
+  nav ul:last-child {
+    @apply gap-8;
   }
 
   input,
   input::placeholder {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  input {
+    border: 1px solid transparent;
+  }
+
+  input:focus {
+    outline: 3px solid transparent;
+    outline-offset: 10px;
+    box-shadow: 0px 0px 0px 3px rgb(var(--primary-1) / 1);
   }
 
   section + section {
