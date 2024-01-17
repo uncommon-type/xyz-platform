@@ -18,7 +18,7 @@ const FeatureItem = ({ title = '', subtitle = '', content = '', className = '' }
     </div>
 
     <div className="card__details flow flex flex-col flex-grow">
-      <hr className="divider m-[0] w-full max-w-[none] translate-y-[none] translate-x-[none] border-0 border-t border-y-[0.0625rem] border-grey-90/10" />
+      <hr className="divider m-[0] w-full max-w-[none] translate-y-[none] translate-x-[none] border-0 border-t border-y-[0.0625rem] border-grey-98/10" />
       <p
         className={`flex items-start text-grey-94 ${robotoLight.className} text-md leading-snug tracking-wide`}
       >
